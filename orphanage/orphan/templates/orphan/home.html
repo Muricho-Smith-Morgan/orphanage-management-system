@@ -1,0 +1,48 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'home.css' %}">
+	<!-- Animations CSS -->
+	<link rel="stylesheet" href="{% static 'animate.css' %}">
+	<!-- Main CSS -->
+	<link rel="stylesheet" href="{% static 'styles.css' %}">
+	<link rel="stylesheet" href="{% static 'responsive.css' %}">
+	<!-- morris charts -->
+	<!-- jvectormap -->
+	<link rel="stylesheet" href="{% static 'jquery-jvectormap.css' %}">
+	<script src="{% static 'modernizr.min.js' %}"></script>
+	<title>Let's Support.com</title>
+</head>
+<body>
+	<nav style="background-color:rgb(250, 220, 220);"> 
+		<h2 class="heading text-center">LET'S SUPPORT.COM</h2>
+		<div class="nav-links" id="navLinks">
+			<ul>
+				<li><a href="{% url 'home' %}">HOME</a></li>
+				<div class="dropdown">
+					<button class="dropbtn">LOGIN|REGISTER</button>
+					<div class="dropdown-content">
+					  <!-- <a href="{% url 'register' %}">ORPHANAGE</a> -->
+					  <a href="{% url 'login_donor' %}">DONOR</a>
+					</div>
+				</div>
+				<li><a href="{% url 'home' %}">AbOUT US</a></li>
+			</ul>
+		</div>
+	</nav>
+	<body class="alemba">
+<div >
+	<p class="text-left" style="color: white;"> Register an orphanage for possible funding<br> <a class="btn btn-success" href="{% url 'orphanage' %}">Register</a></p>
+
+
+<h3 class="text-center" style="color: white;">Let's support is an open platform for channeling contributions to orphanages</h3><br><br><br>
+
+<h3 class="text-left" style="color: white;">We are glad be of part of changing the world</h3>
+</div>
+</body>
+</html>
